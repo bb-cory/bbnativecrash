@@ -2,48 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BUDDYBUILD_APP_ID</key>
-	<string>5942b6a29ef21b0001f38a35</string>
-	<key>BUDDYBUILD_BRANCH</key>
-	<string>master</string>
-	<key>BUDDYBUILD_BUILD_CONFIGURATION</key>
-	<string>Release</string>
-	<key>BUDDYBUILD_BUILD_ID</key>
-	<string>5942b6a29ef21b0001f38a36</string>
-	<key>BUDDYBUILD_BUILD_NUMBER</key>
-	<string>1</string>
-	<key>BUDDYBUILD_ENDPOINT</key>
-	<string>https%3A%2F%2Fapi.buddybuild.com</string>
-	<key>BUDDYBUILD_ENVIRONMENT</key>
-	<string>alpha</string>
-	<key>BUDDYBUILD_INSTANT_REPLAY_BITRATE</key>
-	<integer>256000</integer>
-	<key>BUDDYBUILD_INSTANT_REPLAY_FRAMES_PER_SECOND</key>
-	<integer>15</integer>
-	<key>BUDDYBUILD_INSTANT_REPLAY_INTERPOLATION</key>
-	<integer>4</integer>
-	<key>BUDDYBUILD_SCHEME</key>
-	<string>m2048 - Debug</string>
-	<key>BUDDYBUILD_SETTING_ENABLE_CRASH_REPORTING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_INSTANT_REPLAY</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_LOCAL_LOGGING</key>
-	<false/>
-	<key>BUDDYBUILD_SETTING_ENABLE_NSLOG_CAPTURE</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_INTERCEPTION</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_SCREENSHOT_TUTORIAL</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_SESSION_TRACKING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_UI_TESTS_VIDEO_RECORDING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_VERSION_CHECKING</key>
-	<true/>
-	<key>BUDDYBUILD_SETTING_ENABLE_VIDEO_FEEDBACK</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -66,19 +24,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>localhost</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -93,5 +38,19 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string></string>
+	<key>NSAppTransportSecurity</key>
+	<!--See http://ste.vn/2015/06/10/configuring-app-transport-security-ios-9-osx-10-11/ -->
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
